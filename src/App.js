@@ -34,8 +34,22 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  debugger;
+  // debugger;
   return { items: state.items }
 }
 
+// const mapStateToProps = (state) => {
+//   return { orangePeel: ['a', 'b', 'c'] }
+// } 
+
 export default connect(mapStateToProps)(App);
+
+
+// const vanilla = (milkshake) => {
+//   debugger;
+//   return { items: milkshake.items }
+// }
+
+// export default connect(vanilla)(App); 
+
+// export default connect( state => ({ items: state.items }) )(App);
